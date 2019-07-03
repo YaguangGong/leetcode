@@ -1,7 +1,9 @@
 // Copyright 2019 Mobvoi Inc. All Rights Reserved.
 // Author: yggong@mobvoi.com (Yaguang Gong)
 
-#include "leetcode/utils/utils.hpp"
+#include <functional>
+
+#include "themes/utils/utils.hpp"
 
 using namespace std;
 

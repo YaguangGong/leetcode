@@ -1,7 +1,7 @@
 // Copyright 2019 Mobvoi Inc. All Rights Reserved.
 // Author: yggong@mobvoi.com (Yaguang Gong)
 
-#include "leetcode/utils/utils.hpp"
+#include "themes/utils/utils.hpp"
 
 class Solution {
 public:
