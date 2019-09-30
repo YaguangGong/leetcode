@@ -59,9 +59,39 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
 
-    TreeNode() = default;
+    explicit TreeNode(int x=0) : val(x), left(nullptr), right(nullptr) {}
+};
 
-    explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+class BSTree {
+public:
+    explicit BSTree(TreeNode* root= nullptr) {
+        _root = root;
+        if (root) {
+            node_num = 1;
+        }
+    }
+
+    BSTree(const BSTree&) = delete;
+    BSTree& operator=(const BSTree&) = delete;
+    ~BSTree();
+
+    TreeNode* getRoot() {
+        return _root;
+    }
+    int getSize() {
+        return node_num;
+    }
+
+    TreeNode* searchNode(int val);
+    bool insertNode(int val);
+    bool deleteNode(int val);
+    void preOrderTraversal();
+    void inOrderTraversal();
+    void postOrderTraversal();
+
+private:
+    TreeNode* _root;
+    int node_num;
 };
 
 void printBinaryTree(TreeNode *root);
