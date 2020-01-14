@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 project(leetcode)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS -g)
 
 file(GLOB_RECURSE COMMON_SRC
         themes/utils/*.hpp
@@ -31,6 +32,11 @@ add_executable(95 themes/Tree/95.cc ${COMMON_SRC})
 add_executable(105 themes/DFS/105.cc ${COMMON_SRC})
 add_executable(114 themes/DFS/114.cc ${COMMON_SRC})
 add_executable(124 themes/DFS/124.cc ${COMMON_SRC})
+add_executable(130 themes/DFS/130.cc ${COMMON_SRC})
+add_executable(332 themes/DFS/332.cc ${COMMON_SRC})
+add_executable(337 themes/DFS/337.cc ${COMMON_SRC})
+add_executable(417 themes/DFS/417.cc ${COMMON_SRC})
+add_executable(488 themes/DFS/488.cc ${COMMON_SRC})
 add_executable(test test.cc ${COMMON_SRC})
 
 include_directories(.)
